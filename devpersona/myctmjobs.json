@@ -14,7 +14,7 @@
       "Type" : "Job:Command",
       "Description" : "ncu-job1 Built in eclipse",
       "RunAs" : "tstuser",
-      "Command" : "sleep 5"   
+      "Command" : "sleep 5"
          }
         }
 }
