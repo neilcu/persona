@@ -1,0 +1,22 @@
+{
+    "Defaults" : {
+        "Host" : "ncuctm",
+        "Application": "aws",
+        "SubApplication": "aws-jac",
+        "ControlmServer" : "ctmaws"
+        },
+       
+    "shopd" : {
+    "Type" : "SimpleFolder",
+    "OrderMethod" : "Manual",
+    "ncu-job1" : {
+      "Type" : "Job:Command",
+      "SubApplication" : "ncuaws",
+      "Description" : "Built in eclipse",
+      "RunAs" : "tstuser",
+      "Command" : "sleep 5"   
+         }
+        }
+}
+
+
