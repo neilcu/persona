@@ -1,11 +1,12 @@
-{"Defaults" : {
+{
+"Defaults" : {
         "Host" : "ncuctm",
         "Application": "aws",
         "SubApplication": "aws-jac",
         "ControlmServer" : "ctmaws"
         },
         
-    "shopd" : {
+        "shopd" : {
     "Type" : "SimpleFolder",
     "OrderMethod" : "Manual",
     "ncu-job1" : {
