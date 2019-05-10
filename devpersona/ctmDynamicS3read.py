@@ -36,10 +36,10 @@ def lambda_handler():
     ctm_content = ctmobj.get()['Body'].read().decode('utf-8')
 
 #Define endpoint and submit payload    
-    endpoint_url='https://ec2-35-177-38-80.eu-west-2.compute.amazonaws.com:8443/'  
+    endpoint_url='https://MY-END-POINT-GOES-HERE.eu-west-2.compute.amazonaws.com:8443/'  
     login_url=endpoint_url+'automation-api/session/login'
-    user='emuser'                                                       
-    password='ncpass'                                                   
+    user='username'                                                       
+    password='password'                                                   
     payload = {'username': user, 'password': password}
     headers = {'Content-type': 'application/json'}
 #  Request for token   
