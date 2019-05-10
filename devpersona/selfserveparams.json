@@ -1,5 +1,5 @@
 {
-  "variables": [{"webserver":"webservername"},{"changenum":"12345678"}],
+  "variables": [{"userinput1":"MYDEMOVALUE"},{"userinput2":"ID123456"}],
   "ignoreCriteria": "true",
   "orderIntoFolder": "New"
 }
