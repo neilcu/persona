@@ -1,13 +1,22 @@
 {
+<<<<<<< HEAD
     "Defaults" : {
+=======
+"Defaults" : {
+>>>>>>> branch 'master' of https://github.com/neilcu/persona.git
         "Host" : "ncuctm",
         "Application": "aws",
         "SubApplication": "ncuaws",
         "ControlmServer" : "ctmaws",
         "SiteStandard" : "jobs-as-code-standard"
         },
+<<<<<<< HEAD
        
     "shopd" : {
+=======
+        
+        "shopd" : {
+>>>>>>> branch 'master' of https://github.com/neilcu/persona.git
     "Type" : "SimpleFolder",
     "OrderMethod" : "Manual",
     "ncu-job1" : {
