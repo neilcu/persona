@@ -1,29 +1,21 @@
 {
-<<<<<<< HEAD
-    "Defaults" : {
-=======
-"Defaults" : {
->>>>>>> branch 'master' of https://github.com/neilcu/persona.git
+	"Defaults" : {
         "Host" : "ncuctm",
         "Application": "aws",
-        "SubApplication": "ncuaws",
-        "ControlmServer" : "ctmaws",
-        "SiteStandard" : "jobs-as-code-standard"
+        "SubApplication": "aws-jac",
+        "ControlmServer" : "ctmaws"
         },
-<<<<<<< HEAD
-       
-    "shopd" : {
-=======
         
         "shopd" : {
->>>>>>> branch 'master' of https://github.com/neilcu/persona.git
     "Type" : "SimpleFolder",
     "OrderMethod" : "Manual",
     "ncu-job1" : {
       "Type" : "Job:Command",
-      "Description" : "ncu-job1 Built in eclipse",
+      "SubApplication" : "ncuaws",
+      "Description" : "Built in eclipse",
       "RunAs" : "tstuser",
-      "Command" : "sleep 5"
+      "Command" : "sleep 5",
+      
          }
-        }
+     }
 }
