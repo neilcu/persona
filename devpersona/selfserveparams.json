@@ -1,5 +1,5 @@
 {
-  "variables": [{"webserver":"webservernames"},{"changenum":"12345678"}],
+  "variables": [{"webserver":"webservername"},{"changenum":"12345678"}],
   "ignoreCriteria": "true",
   "orderIntoFolder": "New"
 }
