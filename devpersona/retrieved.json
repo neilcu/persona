@@ -1,0 +1,317 @@
+{
+	"Defaults" : {
+        "SubApplication": "aws-jac"
+        
+        },
+  "ShopDirectFolder" : {
+    "Type" : "SimpleFolder",
+    "ControlmServer" : "ctmaws",
+    "OrderMethod" : "Manual",
+    "Step1" : {
+      "Type" : "Job:Command",
+      "EndFolder" : true,
+      "CreatedBy" : "emuser",
+      "RunAs" : "neilc",
+      "Application" : "aws",
+      "Command" : "sleep 5",
+      "When" : {
+        "WeekDays" : [ "NONE" ],
+        "MonthDays" : [ "ALL" ],
+        "SpecificDates" : [ ],
+        "DaysRelation" : "OR"
+      },
+      "eventsToAdd" : {
+        "Type" : "AddEvents",
+        "Events" : [ {
+          "Event" : "Step1-TO-Step2"
+        }, {
+          "Event" : "Step1-TO-Step3"
+        }, {
+          "Event" : "Step1-TO-Step4"
+        } ]
+      }
+    },
+    "Step2" : {
+      "Type" : "Job:Command",
+      "EndFolder" : true,
+      "CreatedBy" : "emuser",
+      "RunAs" : "neilc",
+      "Application" : "aws",
+      "Command" : "sleep 5",
+      "When" : {
+        "WeekDays" : [ "NONE" ],
+        "MonthDays" : [ "ALL" ],
+        "SpecificDates" : [ ],
+        "DaysRelation" : "OR"
+      },
+      "eventsToWaitFor" : {
+        "Type" : "WaitForEvents",
+        "Events" : [ {
+          "Event" : "Step1-TO-Step2"
+        } ]
+      },
+      "eventsToAdd" : {
+        "Type" : "AddEvents",
+        "Events" : [ {
+          "Event" : "Step2-TO-Step5"
+        } ]
+      },
+      "eventsToDelete" : {
+        "Type" : "DeleteEvents",
+        "Events" : [ {
+          "Event" : "Step1-TO-Step2"
+        } ]
+      }
+    },
+    "Step3" : {
+      "Type" : "Job:Command",
+      "EndFolder" : true,
+      "CreatedBy" : "emuser",
+      "RunAs" : "neilc",
+      "Application" : "aws",
+      "Command" : "sleep 5",
+      "When" : {
+        "WeekDays" : [ "NONE" ],
+        "MonthDays" : [ "ALL" ],
+        "SpecificDates" : [ ],
+        "DaysRelation" : "OR"
+      },
+      "eventsToWaitFor" : {
+        "Type" : "WaitForEvents",
+        "Events" : [ {
+          "Event" : "Step1-TO-Step3"
+        } ]
+      },
+      "eventsToAdd" : {
+        "Type" : "AddEvents",
+        "Events" : [ {
+          "Event" : "Step3-TO-Step5"
+        } ]
+      },
+      "eventsToDelete" : {
+        "Type" : "DeleteEvents",
+        "Events" : [ {
+          "Event" : "Step1-TO-Step3"
+        } ]
+      }
+    },
+    "Step4" : {
+      "Type" : "Job:Command",
+      "EndFolder" : true,
+      "CreatedBy" : "emuser",
+      "RunAs" : "neilc",
+      "Application" : "aws",
+      "Command" : "sleep 5",
+      "When" : {
+        "WeekDays" : [ "NONE" ],
+        "MonthDays" : [ "ALL" ],
+        "SpecificDates" : [ ],
+        "DaysRelation" : "OR"
+      },
+      "eventsToWaitFor" : {
+        "Type" : "WaitForEvents",
+        "Events" : [ {
+          "Event" : "Step1-TO-Step4"
+        } ]
+      },
+      "eventsToAdd" : {
+        "Type" : "AddEvents",
+        "Events" : [ {
+          "Event" : "Step4-TO-Step5"
+        } ]
+      },
+      "eventsToDelete" : {
+        "Type" : "DeleteEvents",
+        "Events" : [ {
+          "Event" : "Step1-TO-Step4"
+        } ]
+      }
+    },
+    "Step5" : {
+      "Type" : "Job:Command",
+      "EndFolder" : true,
+      "CreatedBy" : "emuser",
+      "RunAs" : "neilc",
+      "Application" : "aws",
+      "Command" : "sleep 5",
+      "When" : {
+        "WeekDays" : [ "NONE" ],
+        "MonthDays" : [ "ALL" ],
+        "SpecificDates" : [ ],
+        "DaysRelation" : "OR"
+      },
+      "eventsToWaitFor" : {
+        "Type" : "WaitForEvents",
+        "Events" : [ {
+          "Event" : "Step2-TO-Step5"
+        }, {
+          "Event" : "Step3-TO-Step5"
+        }, {
+          "Event" : "Step4-TO-Step5"
+        } ]
+      },
+      "eventsToAdd" : {
+        "Type" : "AddEvents",
+        "Events" : [ {
+          "Event" : "Step5-TO-Step6"
+        } ]
+      },
+      "eventsToDelete" : {
+        "Type" : "DeleteEvents",
+        "Events" : [ {
+          "Event" : "Step2-TO-Step5"
+        }, {
+          "Event" : "Step3-TO-Step5"
+        }, {
+          "Event" : "Step4-TO-Step5"
+        } ]
+      }
+    },
+    "Step6" : {
+      "Type" : "Job:Command",
+      "EndFolder" : true,
+      "CreatedBy" : "emuser",
+      "RunAs" : "neilc",
+      "Application" : "aws",
+      "Command" : "sleep 20",
+      "When" : {
+        "WeekDays" : [ "NONE" ],
+        "MonthDays" : [ "ALL" ],
+        "SpecificDates" : [ ],
+        "DaysRelation" : "OR"
+      },
+      "eventsToWaitFor" : {
+        "Type" : "WaitForEvents",
+        "Events" : [ {
+          "Event" : "Step5-TO-Step6"
+        } ]
+      },
+      "eventsToAdd" : {
+        "Type" : "AddEvents",
+        "Events" : [ {
+          "Event" : "Step6-TO-Step7"
+        }, {
+          "Event" : "Step6-TO-Step8"
+        }, {
+          "Event" : "Step6-TO-Step9"
+        } ]
+      },
+      "eventsToDelete" : {
+        "Type" : "DeleteEvents",
+        "Events" : [ {
+          "Event" : "Step5-TO-Step6"
+        } ]
+      }
+    },
+    "Step7" : {
+      "Type" : "Job:Command",
+      "EndFolder" : true,
+      "CreatedBy" : "emuser",
+      "RunAs" : "neilc",
+      "Application" : "aws",
+      "Command" : "sleep 20",
+      "When" : {
+        "WeekDays" : [ "NONE" ],
+        "MonthDays" : [ "ALL" ],
+        "SpecificDates" : [ ],
+        "DaysRelation" : "OR"
+      },
+      "eventsToWaitFor" : {
+        "Type" : "WaitForEvents",
+        "Events" : [ {
+          "Event" : "Step6-TO-Step7"
+        } ]
+      },
+      "eventsToDelete" : {
+        "Type" : "DeleteEvents",
+        "Events" : [ {
+          "Event" : "Step6-TO-Step7"
+        } ]
+      }
+    },
+    "Step8" : {
+      "Type" : "Job:Command",
+      "EndFolder" : true,
+      "CreatedBy" : "emuser",
+      "RunAs" : "neilc",
+      "Application" : "aws",
+      "Command" : "sleep 20",
+      "When" : {
+        "WeekDays" : [ "NONE" ],
+        "MonthDays" : [ "ALL" ],
+        "SpecificDates" : [ ],
+        "DaysRelation" : "OR"
+      },
+      "eventsToWaitFor" : {
+        "Type" : "WaitForEvents",
+        "Events" : [ {
+          "Event" : "Step6-TO-Step8"
+        } ]
+      },
+      "eventsToDelete" : {
+        "Type" : "DeleteEvents",
+        "Events" : [ {
+          "Event" : "Step6-TO-Step8"
+        } ]
+      }
+    },
+    "Step9" : {
+      "Type" : "Job:Command",
+      "EndFolder" : true,
+      "CreatedBy" : "emuser",
+      "RunAs" : "neilc",
+      "Application" : "aws",
+      "Command" : "sleep 20",
+      "When" : {
+        "WeekDays" : [ "NONE" ],
+        "MonthDays" : [ "ALL" ],
+        "SpecificDates" : [ ],
+        "DaysRelation" : "OR"
+      },
+      "eventsToWaitFor" : {
+        "Type" : "WaitForEvents",
+        "Events" : [ {
+          "Event" : "Step6-TO-Step9"
+        } ]
+      },
+      "eventsToAdd" : {
+        "Type" : "AddEvents",
+        "Events" : [ {
+          "Event" : "Step9-TO-Step10"
+        } ]
+      },
+      "eventsToDelete" : {
+        "Type" : "DeleteEvents",
+        "Events" : [ {
+          "Event" : "Step6-TO-Step9"
+        } ]
+      }
+    },
+    "Step10" : {
+      "Type" : "Job:Command",
+      "EndFolder" : true,
+      "CreatedBy" : "emuser",
+      "RunAs" : "neilc",
+      "Application" : "aws",
+      "Command" : "sleep 20",
+      "When" : {
+        "WeekDays" : [ "NONE" ],
+        "MonthDays" : [ "ALL" ],
+        "SpecificDates" : [ ],
+        "DaysRelation" : "OR"
+      },
+      "eventsToWaitFor" : {
+        "Type" : "WaitForEvents",
+        "Events" : [ {
+          "Event" : "Step9-TO-Step10"
+        } ]
+      },
+      "eventsToDelete" : {
+        "Type" : "DeleteEvents",
+        "Events" : [ {
+          "Event" : "Step9-TO-Step10"
+        } ]
+      }
+    }
+  }
+}

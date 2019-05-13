@@ -3,8 +3,8 @@ import os
 import sys
 
 ctmserver = "ctmaws"
-runID = "98df2a54-19a8-45ae-b685-a0462c8c6a04"
-jobID = "001w4"
+runID = "1ef3af02-18d2-44a8-b20a-942568ac935f"
+jobID = "00236"
 #curjobs = "hou-workflow-hadoop.json" #hou-workflow-hadoop.json  #hou-workflow-hadoop_db.json
 
 #set aapi environment - Run this if you have multiple aapi environments and you need to set to a specific env
@@ -18,7 +18,7 @@ jobID = "001w4"
 def trackstatus ():
     os.system(('ctm run status %s')%(runID)) #5806063b-4e18-48c0-8c09-3aa3432f7f7b
 
-trackstatus()
+#trackstatus()
 
 # Return job logs from specific jobID
 def getjoblogs ():
@@ -30,7 +30,13 @@ def getjoblogs ():
 def getjobout ():
     os.system(('ctm run job:output::get ctmaws:%s')%(jobID)) 
 
-getjobout()
+#getjobout()
+
+def getjobjson ():
+    os.system(('ctm deploy jobs::get -s "ctm=ctmaws&folder=MultiFlow"'))
+
+getjobjson()
+
     
 
 #    Get all the hostgroups of the specified Control-M Server.
