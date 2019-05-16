@@ -3,8 +3,8 @@ import os
 import sys
 
 ctmserver = "ctmaws"
-runID = "1ef3af02-18d2-44a8-b20a-942568ac935f"
-jobID = "00236"
+runID = "9eedd358-54ef-4f38-ab6b-6b4b0bbd6ee4"
+jobID = "0024s"
 #curjobs = "hou-workflow-hadoop.json" #hou-workflow-hadoop.json  #hou-workflow-hadoop_db.json
 
 #set aapi environment - Run this if you have multiple aapi environments and you need to set to a specific env
