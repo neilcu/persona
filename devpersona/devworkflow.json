@@ -1,15 +1,21 @@
 {
+"Defaults" : {
+        
+        "Application": "aws",
+        "SubApplication": "awsworkb",
+        "RunAs" : "ctmag",
+        "ControlmServer" : "workbench"
+        },
+
+
   "MultiFlow" : {
     "Type" : "SimpleFolder",
-    "ControlmServer" : "ctmaws",
     "OrderMethod" : "Manual",
     "Step1" : {
       "Type" : "Job:Command",
-      "SubApplication" : "multiflow",
       "EndFolder" : true,
       "CreatedBy" : "emuser",
-      "RunAs" : "neilc",
-      "Application" : "aws",
+      "Host" : "ip-172-31-2-38.eu-west-2.compute.internal",
       "Command" : "sleep 5",
       "When" : {
         "WeekDays" : [ "NONE" ],
@@ -32,8 +38,7 @@
       "Type" : "Job:Command",
       "EndFolder" : true,
       "CreatedBy" : "emuser",
-      "RunAs" : "neilc",
-      "Application" : "aws",
+      "Host" : "ip-172-31-3-172.eu-west-2.compute.internal",
       "Command" : "sleep 5",
       "When" : {
         "WeekDays" : [ "NONE" ],
@@ -64,8 +69,7 @@
       "Type" : "Job:Command",
       "EndFolder" : true,
       "CreatedBy" : "emuser",
-      "RunAs" : "neilc",
-      "Application" : "aws",
+      "Host" : "ip-172-31-2-38.eu-west-2.compute.internal",
       "Command" : "sleep 5",
       "When" : {
         "WeekDays" : [ "NONE" ],
@@ -96,8 +100,7 @@
       "Type" : "Job:Command",
       "EndFolder" : true,
       "CreatedBy" : "emuser",
-      "RunAs" : "neilc",
-      "Application" : "aws",
+      "Host" : "ip-172-31-2-38.eu-west-2.compute.internal",
       "Command" : "sleep 5",
       "When" : {
         "WeekDays" : [ "NONE" ],
@@ -128,8 +131,7 @@
       "Type" : "Job:Command",
       "EndFolder" : true,
       "CreatedBy" : "emuser",
-      "RunAs" : "neilc",
-      "Application" : "aws",
+      "Host" : "ip-172-31-2-38.eu-west-2.compute.internal",
       "Command" : "sleep 5",
       "When" : {
         "WeekDays" : [ "NONE" ],
@@ -168,8 +170,7 @@
       "Type" : "Job:Command",
       "EndFolder" : true,
       "CreatedBy" : "emuser",
-      "RunAs" : "neilc",
-      "Application" : "aws",
+      "Host" : "ip-172-31-2-38.eu-west-2.compute.internal",
       "Command" : "sleep 20",
       "When" : {
         "WeekDays" : [ "NONE" ],
@@ -204,8 +205,7 @@
       "Type" : "Job:Command",
       "EndFolder" : true,
       "CreatedBy" : "emuser",
-      "RunAs" : "neilc",
-      "Application" : "aws",
+      "Host" : "ip-172-31-2-38.eu-west-2.compute.internal",
       "Command" : "sleep 20",
       "When" : {
         "WeekDays" : [ "NONE" ],
@@ -230,8 +230,7 @@
       "Type" : "Job:Command",
       "EndFolder" : true,
       "CreatedBy" : "emuser",
-      "RunAs" : "neilc",
-      "Application" : "aws",
+      "Host" : "ip-172-31-2-38.eu-west-2.compute.internal",
       "Command" : "sleep 20",
       "When" : {
         "WeekDays" : [ "NONE" ],
@@ -256,8 +255,7 @@
       "Type" : "Job:Command",
       "EndFolder" : true,
       "CreatedBy" : "emuser",
-      "RunAs" : "neilc",
-      "Application" : "aws",
+      "Host" : "ip-172-31-2-38.eu-west-2.compute.internal",
       "Command" : "sleep 20",
       "When" : {
         "WeekDays" : [ "NONE" ],
@@ -288,8 +286,7 @@
       "Type" : "Job:Command",
       "EndFolder" : true,
       "CreatedBy" : "emuser",
-      "RunAs" : "neilc",
-      "Application" : "aws",
+      "Host" : "ip-172-31-2-38.eu-west-2.compute.internal",
       "Command" : "sleep 20",
       "When" : {
         "WeekDays" : [ "NONE" ],

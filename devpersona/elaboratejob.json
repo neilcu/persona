@@ -1,23 +1,47 @@
 {
 "Defaults" : {
-        "Host" : "ncuctm",
+        
         "Application": "aws",
-        "SubApplication": "aws-jac",
-        "ControlmServer" : "ctmaws"
+        "SubApplication": "awsworkb",
+        "ControlmServer" : "workbench"
         },
         
         "shopd" : {
     "Type" : "SimpleFolder",
     "OrderMethod" : "Manual",
-    "ncu-job1" : {
+    
+      
+     "wb-job2" : {
       "Type" : "Job:Command",
       "Description" : "Built in eclipse",
-      "RunAs" : "tstuser",
-      "Command" : "sleep 5",
+      "Host" : "ip-172-31-3-172.eu-west-2.compute.internal",
+      "RunAs" : "ctmag",
+      "Command" : "sleep 10",
       "sem1": {
         "Type": "Resource:Semaphore",
-        "Quantity": "3"
-         } 
+        "Quantity": "15"
+                }
+        },
+        
+        
+     "wb-job1" : {
+      "Type" : "Job:Command",
+      "Description" : "Built in eclipse",
+      "Host" : "ip-172-31-2-38.eu-west-2.compute.internal",
+      "RunAs" : "ctmag",
+      "Command" : "sleep 10",
+      "sem1": {
+        "Type": "Resource:Semaphore",
+        "Quantity": "15"
+        },
+        
+       
+      "eventsToAdd" : {
+        "Type" : "AddEvents",
+        "Events" : [ {
+          "Event" : "wb-job1-TO-wbjob2"
+        } ]
+      }
+    	  } 
        }
-    }
-}
+}	      
