@@ -3,7 +3,7 @@
         
         "Application": "aws",
         "SubApplication": "awsworkb",
-        "ControlmServer" : "workbench"
+        "ControlmServer" : "ctmaws"
         },
         
         "shopd" : {
