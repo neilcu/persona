@@ -3,6 +3,7 @@
         
         "Application": "aws",
         "SubApplication": "awsworkb",
+        "SiteStandard" : "jobs-as-code-standard",
         "ControlmServer" : "ctmaws"
         },
         
@@ -11,9 +12,9 @@
     "OrderMethod" : "Manual",
     
       
-     "wb-job2" : {
+     "ncu-wb-job2" : {
       "Type" : "Job:Command",
-      "Description" : "IDE to Jenkins NEILCU",
+      "Description" : "ncu-wb-job2 IDE to Jenkins NEILCU",
       "Host" : "ncuctm",
       "RunAs" : "ctmag",
       "Command" : "sleep 10",
@@ -24,9 +25,9 @@
         },
         
         
-     "wb-job1" : {
+     "ncu-wb-job1" : {
       "Type" : "Job:Command",
-      "Description" : "Built in eclipse deployed by Jenkins",
+      "Description" : "ncu-wb-job1 Built in eclipse deployed by Jenkins",
       "Host" : "ncuctm",
       "RunAs" : "ctmag",
       "Command" : "sleep 10",
