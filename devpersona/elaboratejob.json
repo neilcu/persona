@@ -14,7 +14,7 @@
      "wb-job2" : {
       "Type" : "Job:Command",
       "Description" : "Built in eclipse",
-      "Host" : "ip-172-31-3-172.eu-west-2.compute.internal",
+      "Host" : "neilc",
       "RunAs" : "ctmag",
       "Command" : "sleep 10",
       "sem1": {
@@ -27,7 +27,7 @@
      "wb-job1" : {
       "Type" : "Job:Command",
       "Description" : "Built in eclipse",
-      "Host" : "ip-172-31-2-38.eu-west-2.compute.internal",
+      "Host" : "neilc",
       "RunAs" : "ctmag",
       "Command" : "sleep 10",
       "sem1": {
