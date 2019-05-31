@@ -13,7 +13,7 @@
       
      "wb-job2" : {
       "Type" : "Job:Command",
-      "Description" : "Built in eclipse test finally all done",
+      "Description" : "Built in eclipse by Neilc and deployed to CTM by Jenkins",
       "Host" : "neilc",
       "RunAs" : "ctmag",
       "Command" : "sleep 10",
