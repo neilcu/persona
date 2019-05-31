@@ -13,8 +13,8 @@
       
      "wb-job2" : {
       "Type" : "Job:Command",
-      "Description" : "Built in eclipse by neilcu and deployed to CTM by Jenkins set1",
-      "Host" : "neilc",
+      "Description" : "IDE to Jenkins NEILCU",
+      "Host" : "ncuctm",
       "RunAs" : "ctmag",
       "Command" : "sleep 10",
       "sem1": {
@@ -26,8 +26,8 @@
         
      "wb-job1" : {
       "Type" : "Job:Command",
-      "Description" : "Built in eclipse",
-      "Host" : "neilc",
+      "Description" : "Built in eclipse deployed by Jenkins",
+      "Host" : "ncuctm",
       "RunAs" : "ctmag",
       "Command" : "sleep 10",
       "sem1": {
