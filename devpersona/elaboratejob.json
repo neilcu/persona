@@ -13,7 +13,7 @@
       
      "wb-job2" : {
       "Type" : "Job:Command",
-      "Description" : "Built in eclipse",
+      "Description" : "Built in eclipse by NC",
       "Host" : "neilc",
       "RunAs" : "ctmag",
       "Command" : "sleep 10",
