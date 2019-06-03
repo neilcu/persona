@@ -1,0 +1,7 @@
+{
+  "errors": [
+    {
+      "message": "form-data: EISDIR: illegal operation on a directory, read"
+    }
+  ]
+}
