@@ -1,0 +1,39 @@
+{
+  "Defaults" : {
+    "Application" : "aws",
+    "SubApplication" : "awsworkb",
+    "ControlmServer" : "ctmaws"
+  },
+  "neilcdepdesc" : {
+    "Type" : "SimpleFolder",
+    "OrderMethod" : "Manual",
+    "ncu-wb-job2" : {
+      "Type" : "Job:Command",
+      "Description" : "ncu-wb-job2 Using Jenkins as deployment transform with dep desc",
+      "Host" : "ncuctm",
+      "RunAs" : "workbench",
+      "Command" : "sleep 10",
+      "sem1" : {
+        "Type" : "Resource:Semaphore",
+        "Quantity" : "15"
+      }
+    },
+    "ncu-wb-job1" : {
+      "Type" : "Job:Command",
+      "Description" : "ncu-wb-job1 Built in eclipse deployed by Jenkins",
+      "Host" : "ncuctm",
+      "RunAs" : "workbench",
+      "Command" : "sleep 10",
+      "sem1" : {
+        "Type" : "Resource:Semaphore",
+        "Quantity" : "15"
+      },
+      "eventsToAdd" : {
+        "Type" : "AddEvents",
+        "Events" : [ {
+          "Event" : "wb-job1-TO-wbjob2"
+        } ]
+      }
+    }
+  }
+}
