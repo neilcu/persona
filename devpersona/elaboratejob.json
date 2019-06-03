@@ -4,10 +4,10 @@
         "Application": "aws",
         "SubApplication": "awsworkb",
         
-        "ControlmServer" : "workbench"
+        "ControlmServer" : "ctmaws"
         },
         
-        "shopd" : {
+        "reggie" : {
     "Type" : "SimpleFolder",
     "OrderMethod" : "Manual",
     
@@ -15,7 +15,7 @@
      "ncu-wb-job2" : {
       "Type" : "Job:Command",
       "Description" : "ncu-wb-job2 Demo to Regardt",
-      "Host" : "172.31.0.82",
+      "Host" : "ncuctm",
       "RunAs" : "ctmag",
       "Command" : "sleep 10",
       "sem1": {
@@ -28,7 +28,7 @@
      "ncu-wb-job1" : {
       "Type" : "Job:Command",
       "Description" : "ncu-wb-job1 Built in eclipse deployed by Jenkins",
-      "Host" : "172.31.0.82",
+      "Host" : "ncuctm",
       "RunAs" : "ctmag",
       "Command" : "sleep 10",
       "sem1": {
