@@ -11,7 +11,7 @@
       "Type" : "Job:Command",
       "Description" : "ncu-wb-job2 Using Jenkins as deployment transform with dep desc",
       "Host" : "ncuctm",
-      "RunAs" : "workbench",
+      "RunAs" : "neilc",
       "Command" : "sleep 10",
       "sem1" : {
         "Type" : "Resource:Semaphore",
@@ -22,7 +22,7 @@
       "Type" : "Job:Command",
       "Description" : "ncu-wb-job1 Built in eclipse deployed by Jenkins",
       "Host" : "ncuctm",
-      "RunAs" : "workbench",
+      "RunAs" : "neilc",
       "Command" : "sleep 10",
       "sem1" : {
         "Type" : "Resource:Semaphore",
