@@ -1,0 +1,13 @@
+{
+  "DeployDescriptor":
+  [
+    {
+      "Property" :"ControlmServer",
+      "Assign" : "ctmaws"
+    },
+    {
+      "Property" :"Host",
+      "Replace" : "ncuctm"
+    }
+    ]
+}
