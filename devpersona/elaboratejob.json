@@ -14,7 +14,7 @@
       
      "ncu-wb-job2" : {
       "Type" : "Job:Command",
-      "Description" : "ncu-wb-job2 IDE to Jenkins NEILCU",
+      "Description" : "ncu-wb-job2 Demo to Regardt",
       "Host" : "ncuctm",
       "RunAs" : "ctmag",
       "Command" : "sleep 10",
