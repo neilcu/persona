@@ -4,19 +4,19 @@
         "Application": "aws",
         "SubApplication": "awsworkb",
         
-        "ControlmServer" : "workbench"
+        "ControlmServer" : "ctmaws"
         },
         
-        "neilcdepdesc" : {
+        "reggie" : {
     "Type" : "SimpleFolder",
     "OrderMethod" : "Manual",
     
       
      "ncu-wb-job2" : {
       "Type" : "Job:Command",
-      "Description" : "ncu-wb-job2 Using Jenkins as deployment transform with dep desc",
-      "Host" : "workbench",
-      "RunAs" : "workbench",
+      "Description" : "ncu-wb-job2 Demo to Regardt - Using Jenkins as deployment",
+      "Host" : "ncuctm",
+      "RunAs" : "ctmag",
       "Command" : "sleep 10",
       "sem1": {
         "Type": "Resource:Semaphore",
@@ -28,8 +28,8 @@
      "ncu-wb-job1" : {
       "Type" : "Job:Command",
       "Description" : "ncu-wb-job1 Built in eclipse deployed by Jenkins",
-      "Host" : "workbench",
-      "RunAs" : "workbench",
+      "Host" : "ncuctm",
+      "RunAs" : "ctmag",
       "Command" : "sleep 10",
       "sem1": {
         "Type": "Resource:Semaphore",
