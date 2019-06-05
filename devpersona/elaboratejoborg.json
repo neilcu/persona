@@ -4,17 +4,17 @@
         "Application": "aws",
         "SubApplication": "awsworkb",
         
-        "ControlmServer" : "workbench"
+        "ControlmServer" : "ctmaws"
         },
         
-        "reggie" : {
+        "mano" : {
     "Type" : "SimpleFolder",
     "OrderMethod" : "Manual",
     
       
      "ncu-wb-job2" : {
       "Type" : "Job:Command",
-      "Description" : "ncu-wb-job2 Demo to Regardt - Using Jenkins as deployment",
+      "Description" : "ncu-wb-job2 new chsange Demo to Regardt - Using Jenkins as deployment",
       "Host" : "ncuctm",
       "RunAs" : "ctmag",
       "Command" : "sleep 10",
