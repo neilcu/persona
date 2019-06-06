@@ -1,13 +1,17 @@
 {
   "DeployDescriptor":
   [
-    {
+  {
       "Property" :"ControlmServer",
       "Assign" : "ctmaws"
     },
     {
+      "Property" :"RunAs",
+      "Assign" : "neilc"
+    },
+    {
       "Property" :"Host",
-      "Replace" : "ncuctm"
+      "Assign" : "ncuctm"
     }
     ]
 }

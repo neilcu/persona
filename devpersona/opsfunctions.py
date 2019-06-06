@@ -3,7 +3,7 @@ import os
 import sys
 
 ctmserver = "ctmaws"
-runID = "9eedd358-54ef-4f38-ab6b-6b4b0bbd6ee4"
+runID = "bba9be01-68eb-4bd7-8549-69c008c5046c"
 jobID = "0024s"
 #curjobs = "hou-workflow-hadoop.json" #hou-workflow-hadoop.json  #hou-workflow-hadoop_db.json
 
@@ -18,7 +18,7 @@ jobID = "0024s"
 def trackstatus ():
     os.system(('ctm run status %s')%(runID)) #5806063b-4e18-48c0-8c09-3aa3432f7f7b
 
-#trackstatus()
+trackstatus()
 
 # Return job logs from specific jobID
 def getjoblogs ():

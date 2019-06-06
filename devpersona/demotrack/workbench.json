@@ -1,0 +1,54 @@
+{
+"Defaults" : {
+		"Application": "DailyFinance",
+		"SubApplication": "AntiMoneyLaundering",
+		"OrderMethod": "Manual",
+		"ControlmServer" : "workbench"
+	},
+	
+	"unittesting": {
+		"Type": "Folder",
+	
+	"UtAppDaily": {	
+	"Type" : "Job:Script",
+    "FileName" : "myscript.sh",
+    "FilePath" : "/home/neilc/units/",
+    "Host" : "ncuwbag",
+    "RunAs" : "neilc",
+     "eventsToAdd" : {
+        "Type" : "AddEvents",
+        "Events" : [ {
+          "Event" : "UtAppDaily-TO-UtAppDailyFollowup"
+        } ]
+        }
+     },
+    
+    "UtAppDailyFollowup" : {	
+	"Type" : "Job:Script",
+    "FileName" : "myscript.sh",
+    "FilePath" : "/home/neilc/units/",
+    "Host" : "ncuwbag2",
+    "RunAs" : "neilc",
+    "sem1": {
+        "Type": "Resource:Semaphore",
+        "Quantity": "15"
+        },
+    "eventsToWaitFor" : {
+        "Type": "WaitForEvents",
+        "Events": [
+          {
+            "Event": "UtAppDaily-TO-UtAppDailyFollowup"
+          }
+        ]
+      },
+      "eventsToDelete" : {
+        "Type": "DeleteEvents",
+        "Events": [
+          {
+            "Event": "UtAppDaily-TO-UtAppDailyFollowup"
+          }
+        ]
+      }
+      }
+}
+}

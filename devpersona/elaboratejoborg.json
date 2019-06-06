@@ -11,8 +11,7 @@
     "Type" : "SimpleFolder",
     "OrderMethod" : "Manual",
     
-      
-     "ncu-wb-job2" : {
+      "ncu-wb-job2" : {
       "Type" : "Job:Command",
       "Description" : "ncu-wb-job2 new chsange Demo to Regardt - Using Jenkins as deployment",
       "Host" : "ncuctm",
