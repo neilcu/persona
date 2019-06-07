@@ -15,7 +15,7 @@
       "Type" : "Job:Command",
       "EndFolder" : true,
       "CreatedBy" : "emuser",
-      "Host" : "ip-172-31-2-38.eu-west-2.compute.internal",
+      "Host" : "ncuwbag1",
       "Command" : "sleep 5",
       "When" : {
         "WeekDays" : [ "NONE" ],
