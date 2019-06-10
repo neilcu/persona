@@ -7,14 +7,14 @@
         "ControlmServer" : "ctmaws"
         },
         
-        "internalsales" : {
+        "marenza" : {
     "Type" : "SimpleFolder",
     "OrderMethod" : "Manual",
     
       
      "ncu-wb-job2" : {
       "Type" : "Job:Command",
-      "Description" : "ncu-wb-job2 sales internalsing Jenkins for deployment",
+      "Description" : "ncu-wb-job2 Marenza asked for this change",
       "Host" : "ncuctm",
       "RunAs" : "ctmag",
       "Command" : "sleep 10",
