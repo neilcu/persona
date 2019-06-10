@@ -14,7 +14,7 @@
       
      "ncu-wb-job2" : {
       "Type" : "Job:Command",
-      "Description" : "ncu-wb-job2 Using Jenkins as deployment",
+      "Description" : "ncu-wb-job2 Using Jenkins for deployment",
       "Host" : "ncuctm",
       "RunAs" : "ctmag",
       "Command" : "sleep 10",
