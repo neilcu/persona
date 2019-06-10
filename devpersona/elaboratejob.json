@@ -7,7 +7,7 @@
         "ControlmServer" : "ctmaws"
         },
         
-        "tmon" : {
+        "internalsales" : {
     "Type" : "SimpleFolder",
     "OrderMethod" : "Manual",
     
