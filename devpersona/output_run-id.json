@@ -1,0 +1,5 @@
+{
+  "runId": "f049da35-3e1e-4696-a1dd-c29cf5765dff",
+  "statusURI": "https://ec2-35-177-38-80.eu-west-2.compute.amazonaws.com:8443/automation-api/run/status/f049da35-3e1e-4696-a1dd-c29cf5765dff?token=CA47C846AA8376052E44269967CEFE09D340069D9BE56BADDC9EA1162F9121D81821974457F5B91692186CA535E2808C8ED19C09F111D62C546370FDBDADCDDE"
+}
+-i is not supported. The interactive URL property 'monitorPageURI' not found in command result

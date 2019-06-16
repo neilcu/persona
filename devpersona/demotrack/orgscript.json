@@ -1,0 +1,26 @@
+{
+  "script" : {
+    "Type" : "SimpleFolder",
+    "ControlmServer" : "workbench",
+    "OrderMethod" : "Manual",
+    "myScriptJob" : {
+      "Type" : "Job:Script",
+      "SubApplication" : "workb-builders",
+      "EndFolder" : true,
+      "FileName" : "myscript.sh",
+      "FilePath" : "/home/neilc/unittesting",
+      "CreatedBy" : "NeilC",
+      "Description" : "run a script on your host",
+      "Host" : "icbc2",
+      "RunAs" : "neilc",
+      "Application" : "workb-ncu-jac",
+      "Arguments" : [ "Control-M Generated VAR", "5" ],
+      "When" : {
+        "WeekDays" : [ "NONE" ],
+        "MonthDays" : [ "NONE" ],
+        "SpecificDates" : [ ],
+        "DaysRelation" : "OR"
+      }
+    }
+  }
+}

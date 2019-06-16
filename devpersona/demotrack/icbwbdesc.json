@@ -1,0 +1,28 @@
+{
+  "DeployDescriptor":
+  [
+  {
+      "Property" :"ControlmServer",
+      "Assign" : "ctmaws"
+    },
+    {
+      "Property" :"RunAs",
+      "Assign" : "neilc"
+    },
+    {
+      "Property" :"Application",
+      "Replace" : [ {"workb(.*)" : "ncu$1"} ]
+    },
+    { "Property" :"SubApplication",
+      "Replace" : [ {"workb(.*)" : "ncu$1"} ]
+    },
+    {
+    "Property" : "FilePath",
+    "Replace" : [ {"/home/neilc/unittesting" : "/home/neilc/units"} ]
+    },
+    {
+      "Property" :"Host",
+      "Assign" : "ncuctm"
+    }
+    ]
+}
