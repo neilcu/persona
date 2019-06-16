@@ -2,9 +2,9 @@
 import os
 import sys
 
-ctmserver = "ctmaws"
-runID = "bba9be01-68eb-4bd7-8549-69c008c5046c"
-jobID = "0024s"
+ctmserver = "workbench"
+runID = "0128d808-f682-4352-8114-c67b84c1ec7e"
+jobID = "0006h"
 #curjobs = "hou-workflow-hadoop.json" #hou-workflow-hadoop.json  #hou-workflow-hadoop_db.json
 
 #set aapi environment - Run this if you have multiple aapi environments and you need to set to a specific env
@@ -22,20 +22,20 @@ trackstatus()
 
 # Return job logs from specific jobID
 def getjoblogs ():
-    os.system(('ctm run job:log::get ctmaws:%s')%(jobID)) #001vj
+    os.system(('ctm run job:log::get %s:%s')%(ctmserver,jobID)) #001vj
 
-#getjoblogs()
+getjoblogs()
 
 # Return job output from specific jobID
 def getjobout ():
-    os.system(('ctm run job:output::get ctmaws:%s')%(jobID)) 
+    os.system(('ctm run job:output::get %s:%s')%(ctmserver,jobID)) 
 
-#getjobout()
+getjobout()
 
 def getjobjson ():
     os.system(('ctm deploy jobs::get -s "ctm=ctmaws&folder=MultiFlow"'))
 
-getjobjson()
+#getjobjson()
 
     
 

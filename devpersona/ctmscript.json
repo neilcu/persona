@@ -1,0 +1,25 @@
+{
+  "script" : {
+    "Type" : "SimpleFolder",
+    "ControlmServer" : "ctmaws",
+    "OrderMethod" : "Manual",
+    "myScriptJob" : {
+      "Type" : "Job:Script",
+      "SubApplication" : "builders",
+      "EndFolder" : true,
+      "FileName" : "myscript.sh",
+      "FilePath" : "/home/neilc/units",
+      "CreatedBy" : "NeilC",
+      "Description" : "run a script on your host",
+      "RunAs" : "neilc",
+      "Application" : "ncu-jac",
+      "Arguments" : [ "Control-M Generated VAR", "10" ],
+      "When" : {
+        "WeekDays" : [ "NONE" ],
+        "MonthDays" : [ "NONE" ],
+        "SpecificDates" : [ ],
+        "DaysRelation" : "OR"
+      }
+    }
+  }
+}
