@@ -1,7 +1,7 @@
 {
   "statuses": [
     {
-      "jobId": "ctmaws:002cg",
+      "jobId": "ctmaws:002ck",
       "folderId": "ctmaws:00000",
       "numberOfRuns": 1,
       "name": "myScriptJob",
@@ -10,10 +10,10 @@
       "status": "Ended OK",
       "held": false,
       "deleted": false,
-      "startTime": "Jun 16, 2019 12:04:05 PM",
-      "endTime": "Jun 16, 2019 12:04:05 PM",
-      "outputURI": "https://ec2-35-177-38-80.eu-west-2.compute.amazonaws.com:8443/automation-api/run/job/ctmaws:002cg/output?token=B37E50263C021AD9288DDAB059536D9CEE9049281B78A5C0E5D446030CAF0184CC98D3FA8E7FB0620CABF4E0CEF2E2F23DE7D9511ABBFDC74CC8DB80DD16BB46",
-      "logURI": "https://ec2-35-177-38-80.eu-west-2.compute.amazonaws.com:8443/automation-api/run/job/ctmaws:002cg/log?token=B37E50263C021AD9288DDAB059536D9CEE9049281B78A5C0E5D446030CAF0184CC98D3FA8E7FB0620CABF4E0CEF2E2F23DE7D9511ABBFDC74CC8DB80DD16BB46"
+      "startTime": "Jun 16, 2019 1:32:04 PM",
+      "endTime": "Jun 16, 2019 1:32:04 PM",
+      "outputURI": "https://ec2-35-177-38-80.eu-west-2.compute.amazonaws.com:8443/automation-api/run/job/ctmaws:002ck/output?token=FF4097F800CB2437EA6B267FBECABA41E2B86308D0607CBB821A0177607B3BBE4F5EE299B1E2D8B57391D650FF5418E7DA3C0E5E4ACEF989D976963289F426DF",
+      "logURI": "https://ec2-35-177-38-80.eu-west-2.compute.amazonaws.com:8443/automation-api/run/job/ctmaws:002ck/log?token=FF4097F800CB2437EA6B267FBECABA41E2B86308D0607CBB821A0177607B3BBE4F5EE299B1E2D8B57391D650FF5418E7DA3C0E5E4ACEF989D976963289F426DF"
     }
   ],
   "startIndex": 0,
