@@ -2,8 +2,9 @@
   "ncu-aws-s3" : {
     "Type" : "SimpleFolder",
     "ControlmServer" : "ctmaws",
+    "SiteStandard" : "jobs-as-code-standard",
     "OrderMethod" : "Manual",
-    "File Transfer_Job_3" : {
+    "ncu-File Transfer_Job_3" : {
       "Type" : "Job:FileTransfer",
       "ConnectionProfileSrc" : "neilcOnLocal",
       "ConnectionProfileDest" : "ncus3",
