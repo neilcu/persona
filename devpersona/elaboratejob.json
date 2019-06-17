@@ -14,7 +14,7 @@
       
      "ncu-wb-job2" : {
       "Type" : "Job:Command",
-      "Description" : "ncu-wb-job2 Inserted via Jenkins webhook",
+      "Description" : "ncu-wb-job2 Insertedia Jenkins webhook",
       "Host" : "ncuctm",
       "RunAs" : "ctmag",
       "Command" : "sleep 10",
