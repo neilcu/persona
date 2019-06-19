@@ -7,14 +7,14 @@
         "ControlmServer" : "ctmaws"
         },
         
-        "icbc" : {
+        "VMoney" : {
     "Type" : "SimpleFolder",
     "OrderMethod" : "Manual",
     
       
-     "ncu-wb-job2" : {
+     "ncu-Vmoney" : {
       "Type" : "Job:Command",
-      "Description" : "ncu-wb-job2 Insertedia Jenkins webhook",
+      "Description" : "ncu-Vmoney wb-job2 Virgin Money Jenkins webhook",
       "Host" : "ncuctm",
       "RunAs" : "ctmag",
       "Command" : "sleep 10",
