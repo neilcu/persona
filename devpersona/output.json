@@ -1,19 +1,19 @@
 {
   "statuses": [
     {
-      "jobId": "ctmaws:002ck",
-      "folderId": "ctmaws:00000",
+      "jobId": "ctmdocker:00002",
+      "folderId": "ctmdocker:00000",
       "numberOfRuns": 1,
-      "name": "myScriptJob",
-      "folder": "script",
-      "type": "Job",
+      "name": "ncu-job1",
+      "folder": "ncudocker",
+      "type": "Command",
       "status": "Ended OK",
       "held": false,
       "deleted": false,
-      "startTime": "Jun 16, 2019 1:32:04 PM",
-      "endTime": "Jun 16, 2019 1:32:04 PM",
-      "outputURI": "https://ec2-35-177-38-80.eu-west-2.compute.amazonaws.com:8443/automation-api/run/job/ctmaws:002ck/output?token=FF4097F800CB2437EA6B267FBECABA41E2B86308D0607CBB821A0177607B3BBE4F5EE299B1E2D8B57391D650FF5418E7DA3C0E5E4ACEF989D976963289F426DF",
-      "logURI": "https://ec2-35-177-38-80.eu-west-2.compute.amazonaws.com:8443/automation-api/run/job/ctmaws:002ck/log?token=FF4097F800CB2437EA6B267FBECABA41E2B86308D0607CBB821A0177607B3BBE4F5EE299B1E2D8B57391D650FF5418E7DA3C0E5E4ACEF989D976963289F426DF"
+      "startTime": "Jun 23, 2019 1:27:26 PM",
+      "endTime": "Jun 23, 2019 1:27:26 PM",
+      "outputURI": "https://localhost:8446/automation-api/run/job/ctmdocker:00002/output?token=18DC56D89DE731591E64213992DFDB17C3FF28DF1B164FCB998BEEA64EDDD3E4D3B1240FF0153A52311713453CB6FCDC77041B8572E1D55370D51A61297E0365",
+      "logURI": "https://localhost:8446/automation-api/run/job/ctmdocker:00002/log?token=18DC56D89DE731591E64213992DFDB17C3FF28DF1B164FCB998BEEA64EDDD3E4D3B1240FF0153A52311713453CB6FCDC77041B8572E1D55370D51A61297E0365"
     }
   ],
   "startIndex": 0,
