@@ -14,7 +14,7 @@
       
      "ncu-Vmoney" : {
       "Type" : "Job:Command",
-      "Description" : "ncu-Vmoney wb-job2 Virgin Money Jenkins webhook",
+      "Description" : "ncu-Vmoney wb-job2 Santander Jenkins webhook",
       "Host" : "ncuctm",
       "RunAs" : "ctmag",
       "Command" : "sleep 10",
