@@ -16,8 +16,8 @@
       "Type" : "Job:Command",
       "Description" : "ncu-SEAM DevOps meetup - Here for pizza and beers -  Jenkins webhook",
       "Host" : "ncuctm",
-      "RunAs" : "ctmag",
-      "Command" : "sleep 10",
+      "RunAs" : "ctms",
+      "Command" : "ls -la",
       "sem1": {
         "Type": "Resource:Semaphore",
         "Quantity": "15"
@@ -29,7 +29,7 @@
       "Type" : "Job:Command",
       "Description" : "ncu-wb-job1 Built in eclipse deployed by Jenkins",
       "Host" : "ncuctm",
-      "RunAs" : "ctmag",
+      "RunAs" : "ctms",
       "Command" : "sleep 10",
       "sem1": {
         "Type": "Resource:Semaphore",
