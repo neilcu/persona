@@ -7,14 +7,14 @@
         "ControlmServer" : "ctmaws"
         },
         
-        "VMoney" : {
+        "ncu-Meetup" : {
     "Type" : "SimpleFolder",
     "OrderMethod" : "Manual",
     
       
-     "ncu-Vmoney" : {
+     "ncu-SEAM" : {
       "Type" : "Job:Command",
-      "Description" : "ncu-Vmoney wb-job2 Santander new chamnge nkins webhook",
+      "Description" : "ncu-SEAM DevOps meetup Jenkins webhook",
       "Host" : "ncuctm",
       "RunAs" : "ctmag",
       "Command" : "sleep 10",
