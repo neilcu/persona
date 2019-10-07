@@ -3,7 +3,7 @@
         
         "Application": "aws",
         "SubApplication": "awsworkb",
-        "SiteStandard" : "jobs-as-code-standard",
+       "SiteStandard" : "jobs-as-code",
         "ControlmServer" : "ctmaws"
         },
         
