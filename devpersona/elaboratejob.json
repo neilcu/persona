@@ -14,7 +14,7 @@
       
      "ncu-SEAM" : {
       "Type" : "Job:Command",
-      "Description" : "ncu- Fidelity DevOps meetup - Here for pizza and beers -  Jenkins webhook",
+      "Description" : "ncu- Standard Bank pizza will be served at 12:30-  Jenkins webhook",
       "Host" : "ncuctm",
       "RunAs" : "ctms",
       "Command" : "ls -la",
