@@ -14,7 +14,7 @@
       
      "ncu-SEAM" : {
       "Type" : "Job:Command",
-      "Description" : "ncu- Standard Bank pizza will be served at 12:30-  Jenkins webhook",
+      "Description" : "ncu-Exchange 2019- webhook",
       "Host" : "ncuctm",
       "RunAs" : "ctms",
       "Command" : "ls -la",
