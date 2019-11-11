@@ -7,12 +7,12 @@
         "ControlmServer" : "ctmaws"
         },
         
-        "ncu-Meetup" : {
+        "ncu-LondonExchange" : {
     "Type" : "SimpleFolder",
     "OrderMethod" : "Manual",
     
       
-     "ncu-SEAM" : {
+     "ncu-ExchangeCommand" : {
       "Type" : "Job:Command",
       "Description" : "ncu-Exchange Control-M 2019- webhook",
       "Host" : "ncuctm",
