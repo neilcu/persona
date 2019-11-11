@@ -1,0 +1,18 @@
+{
+
+"Defaults" : {
+        
+        "Application": "aws",
+        "SubApplication": "awsworkb",
+        
+        "ControlmServer" : "ctmaws"
+        },
+        
+        "CommandJob1": {
+			"Type" : "Job:Command",
+			"Command" : "echo hello",
+			"RunAs" : "user1"
+		}
+
+
+}

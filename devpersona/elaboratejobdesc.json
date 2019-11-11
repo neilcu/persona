@@ -4,12 +4,12 @@
     "SubApplication" : "awsworkb",
     "ControlmServer" : "ctmaws"
   },
-  "reggie" : {
+  "DevopsMeetupTask" : {
     "Type" : "SimpleFolder",
     "OrderMethod" : "Manual",
     "ncu-wb-job2" : {
       "Type" : "Job:Command",
-      "Description" : "ncu-wb-job2 Demo to Regardt - Using Jenkins as deployment",
+      "Description" : "ncu-wb-job2  Seam meetup. Pizza was huge- Using Jenkins as deployment",
       "Host" : "ncuctm",
       "RunAs" : "neilc",
       "Command" : "sleep 10",

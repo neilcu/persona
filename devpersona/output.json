@@ -1,22 +1,37 @@
 {
   "statuses": [
     {
-      "jobId": "ctmdocker:00002",
-      "folderId": "ctmdocker:00000",
-      "numberOfRuns": 1,
-      "name": "ncu-job1",
-      "folder": "ncudocker",
+      "jobId": "ctmaws:002uj",
+      "folderId": "ctmaws:00000",
+      "numberOfRuns": 0,
+      "name": "ncu-SEAM",
+      "folder": "ncu-Meetup",
       "type": "Command",
-      "status": "Ended OK",
+      "status": "Wait Resource",
       "held": false,
       "deleted": false,
-      "startTime": "Jun 23, 2019 1:27:26 PM",
-      "endTime": "Jun 23, 2019 1:27:26 PM",
-      "outputURI": "https://localhost:8446/automation-api/run/job/ctmdocker:00002/output?token=18DC56D89DE731591E64213992DFDB17C3FF28DF1B164FCB998BEEA64EDDD3E4D3B1240FF0153A52311713453CB6FCDC77041B8572E1D55370D51A61297E0365",
-      "logURI": "https://localhost:8446/automation-api/run/job/ctmdocker:00002/log?token=18DC56D89DE731591E64213992DFDB17C3FF28DF1B164FCB998BEEA64EDDD3E4D3B1240FF0153A52311713453CB6FCDC77041B8572E1D55370D51A61297E0365"
+      "startTime": "",
+      "endTime": "",
+      "outputURI": "Job did not run, it has no output",
+      "logURI": "https://ec2-35-177-38-80.eu-west-2.compute.amazonaws.com:8443/automation-api/run/job/ctmaws:002uj/log?token=1E1B6DC30A21A92E642BEC97B7DCFA5ACF04BE72E9F190941CCC5D5C4760A3DAFC9B3AB6EF1806DD3B5F391A18BC0A90804EA61BDF242F6248E5BA31CF9E5C0E"
+    },
+    {
+      "jobId": "ctmaws:002uk",
+      "folderId": "ctmaws:00000",
+      "numberOfRuns": 0,
+      "name": "ncu-wb-job1",
+      "folder": "ncu-Meetup",
+      "type": "Command",
+      "status": "Wait Resource",
+      "held": false,
+      "deleted": false,
+      "startTime": "",
+      "endTime": "",
+      "outputURI": "Job did not run, it has no output",
+      "logURI": "https://ec2-35-177-38-80.eu-west-2.compute.amazonaws.com:8443/automation-api/run/job/ctmaws:002uk/log?token=1E1B6DC30A21A92E642BEC97B7DCFA5ACF04BE72E9F190941CCC5D5C4760A3DAFC9B3AB6EF1806DD3B5F391A18BC0A90804EA61BDF242F6248E5BA31CF9E5C0E"
     }
   ],
   "startIndex": 0,
   "itemsPerPage": 25,
-  "total": 1
+  "total": 2
 }

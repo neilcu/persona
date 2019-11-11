@@ -1,0 +1,28 @@
+{
+"Defaults" : {
+        
+        "Application": "aws",
+        "SubApplication": "awsworkb",
+        
+        "ControlmServer" : "ctmaws"
+        },
+       
+       "FolderSampleBasic": {
+		"Type": "Folder",
+	 
+	 jac
+	 
+        
+        "ncu-wb-job3" : {
+      "Type" : "Job:Command",
+      "Description" : "ncu-wb-job3 Beer by default",
+      "Host" : "ncuctm",
+      "RunAs" : "ctms",
+      "Command" : "sleep 10",
+      "sem1": {
+        "Type": "Resource:Semaphore",
+        "Quantity": "15"
+                }
+        }
+    }   
+ }
