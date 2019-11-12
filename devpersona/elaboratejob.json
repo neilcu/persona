@@ -14,7 +14,7 @@
       
      "ncu-ExchangeCommand" : {
       "Type" : "Job:Command",
-      "Description" : "ncu-Exchange Control-M 2019- webhook",
+      "Description" : "ncu-Exchange Control-M seminar 2019- webhook",
       "Host" : "ncuctm",
       "RunAs" : "ctms",
       "Command" : "ls -la",
