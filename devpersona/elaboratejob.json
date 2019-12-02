@@ -14,7 +14,7 @@
       
      "ncu-ExchangeCommand" : {
       "Type" : "Job:Command",
-      "Description" : "ncu-Exchange Kingfisher Control-M seminar 2019- webhook",
+      "Description" : "ncu-Kingfisher jobs as code Control-M seminar 2019- webhook",
       "Host" : "ncuctm",
       "RunAs" : "ctms",
       "Command" : "ls -la",
