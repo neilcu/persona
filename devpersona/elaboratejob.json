@@ -3,18 +3,18 @@
         
         "Application": "aws",
         "SubApplication": "awsworkb",
-       "SiteStandard" : "jobs-as-code",
-        "ControlmServer" : "ctmaws"
+       
+        "ControlmServer" : "ctmdocker"
         },
         
-        "ncu-LondonExchange" : {
+        "ncu-N" : {
     "Type" : "SimpleFolder",
     "OrderMethod" : "Manual",
     
       
      "ncu-ExchangeCommand" : {
       "Type" : "Job:Command",
-      "Description" : "ncu-Kingfisher jobs as code Control-M seminar 2019- webhook",
+      "Description" : "ncu-Nationwide  jobs as code Control-M- webhook",
       "Host" : "ncuctm",
       "RunAs" : "ctms",
       "Command" : "ls -la",
@@ -23,7 +23,7 @@
         "Quantity": "15"
                 }
         },
-        
+       
         
      "ncu-wb-job1" : {
       "Type" : "Job:Command",
