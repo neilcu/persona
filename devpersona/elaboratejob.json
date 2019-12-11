@@ -4,15 +4,15 @@
         "Application": "aws",
         "SubApplication": "awsworkb",
        
-        "ControlmServer" : "ctmdocker"
+        "ControlmServer" : "ctmaws"
         },
         
-        "ncu-N" : {
+        "ncu-cicd" : {
     "Type" : "SimpleFolder",
     "OrderMethod" : "Manual",
     
       
-     "ncu-ExchangeCommand" : {
+     "ncu-cicd-job1" : {
       "Type" : "Job:Command",
       "Description" : "ncu-IAG  jobs as code Control-M- webhook",
       "Host" : "ncuctm",
@@ -34,15 +34,12 @@
       "sem1": {
         "Type": "Resource:Semaphore",
         "Quantity": "15"
-        },
-        
+        }
+       },
        
-      "eventsToAdd" : {
-        "Type" : "AddEvents",
-        "Events" : [ {
-          "Event" : "wb-job1-TO-wbjob2"
-        } ]
+     "elabflow": {
+	"Type":"Flow",
+	"Sequence":["ncu-cicd-job1", "ncu-wb-job1"]
+		}		 
       }
-    	  } 
-       }
-}	      
+}
